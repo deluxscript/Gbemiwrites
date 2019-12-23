@@ -1,0 +1,30 @@
+.content {
+    margin-top: 80px;
+    width: 70%;
+    content: "";
+    display: grid;
+    clear: both;
+}
+.BlogInfo {
+    border-bottom: 1px solid #afafaf;
+    padding: 10px 0;
+}
+.extras {
+    padding-top: 10px;
+}
+.left {
+    float: left;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+.right {
+    float: right;
+    color: #DB4651;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+.tags {
+    color: #DB4651;
+}
