@@ -1,0 +1,17 @@
+.searchTitle {
+    background-color: #344EA9;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.PopularTitle {
+    padding: 20px;
+}
+
+.PopularTitle p{
+    color: #BAB5B0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}

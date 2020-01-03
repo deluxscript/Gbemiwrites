@@ -7,7 +7,7 @@ import BlogInfo from "./blogInfo.component";
 const Content = (props) => (
     <div className={classes.content}>
         {
-            props.Allposts.map(post => <BlogInfo key={post.id} id={post.id} image={post.imgURL} title={post.title} excerpt={post.teaserText} content={post.content}/>)
+            props.Allposts.map(post => <BlogInfo key={post.id} id={post.id} image={post.imgURL} date={post.date} title={post.title} excerpt={post.teaserText} content={post.content}/>)
         }
     </div>
 );

@@ -1,5 +1,22 @@
-.appholder {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+.contentsSection  {
+    width: 80%;
+}
+.sidebarSection {
+    width: 20%;
+    background-color: #fff;
+    right: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 780px) {
+    .contentsSection  {
+        width: 75%;
+    }
+
+    .sidebarSection {
+        width: 25%;
+    }
 }

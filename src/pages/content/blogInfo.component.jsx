@@ -1,21 +1,28 @@
 import React from "react";
 
-// import {Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 import classes from "./content.module.css";
 
-const BlogInfo = (props) => (
-    <div className={classes.BlogInfo}>
-        <h2>{props.title}</h2>
-        <p>{props.excerpt}</p>
-        {/* <Link to={"/fullcontent/" + props.id}>
-          <button className="btn">Read More</button>
-        </Link> */}
-        <div className={classes.extras}>
-            <span className={classes.left}>March 12, 2019</span>
-            <span className={classes.right}>red</span>
+const BlogInfo = (props) => {
+
+    // let initParam = props.title.toLowerCase()
+    // initParam = initParam.replace(/\s+/g, '-');
+
+    return(
+        <div className={classes.BlogInfo}>
+            <div className={classes.postGrid}>
+                <div className={classes.textGrid}>
+                    <div>
+                        <h2>{props.title}</h2>
+                        <p>{props.date}</p>
+                        <Link to={`posts/${props.id}`}><button>Read More</button></Link>
+                    </div>
+                </div>
+                <div className={classes.imgGrid} style={{ backgroundImage: "url("+props.image+")" }}></div>
+            </div>
         </div>
-    </div>
-);
+    )
+}
 
 export default BlogInfo;

@@ -1,11 +1,4 @@
-.content {
-    margin-top: 80px;
-    width: 70%;
-    content: "";
-    display: grid;
-    clear: both;
-}
-.BlogInfo {
+/* .BlogInfo {
     border-bottom: 1px solid #afafaf;
     padding: 10px 0;
 }
@@ -27,4 +20,80 @@
 }
 .tags {
     color: #DB4651;
+} */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.BlogInfo {
+    flex: 1 0 35%;
+    margin: 20px;
+}
+
+.postGrid {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 70px 140px 0 rgba(130,136,171,.2);
+}
+
+.textGrid {
+    flex: 0 0 50%;
+    width: 50%;
+    text-align: left;
+    min-height: 200px;
+}
+
+.textGrid div {
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.textGrid h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.imgGrid {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+}
+
+button {
+    border: none;
+    background-color: #344EA9;
+    color: #ffffff;
+    padding: 10px;
+    width: 50%;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+/* RESPONSIVENESS */
+@media (max-width: 780px) {
+    .BlogInfo {
+        flex: 1 0 50%;
+    }
 }
