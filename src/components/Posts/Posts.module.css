@@ -1,5 +1,6 @@
 .SinglePost {
-    margin: 20px;
+    margin: 0 auto;
+    width: 60%;
     padding: 0 30px;
 }
 .topContent {
@@ -24,12 +25,22 @@
     display: block;
     width: 100%;
     height: auto;
+    box-shadow: 0 6px 35px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 14px;
 }
 
 .postText {
     padding: 0 40px;
-    font-size: 15px;
-    letter-spacing: -.02em;
-    line-height: 1.7;
-    color: #373737;
+    margin-top: 50px;
+}
+
+.postText p, .postText {
+    line-height: 1.58;
+    color: rgba(0, 0, 0, 0.84);
+    font-style: normal;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 21px;
+    letter-spacing: 0.016em;
 }

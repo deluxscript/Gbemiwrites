@@ -6,9 +6,6 @@ import classes from "./content.module.css";
 
 const BlogInfo = (props) => {
 
-    // let initParam = props.title.toLowerCase()
-    // initParam = initParam.replace(/\s+/g, '-');
-
     return(
         <div className={classes.BlogInfo}>
             <div className={classes.postGrid}>

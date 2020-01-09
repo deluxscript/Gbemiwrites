@@ -28,6 +28,8 @@ class AppHolder extends Component {
           })
       }
 
+
+    
     render() {
         return (
             <Router>
@@ -48,7 +50,7 @@ class AppHolder extends Component {
                             </Switch>
                         </div>
                         <div className={classes.sidebarSection}>
-                            <Sidebar />
+                            <Sidebar sidebarPosts = {[...this.state.posts]} />
                         </div>
                     </div>
                 </Aux>
